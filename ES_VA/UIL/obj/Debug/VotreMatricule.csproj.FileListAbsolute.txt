@@ -1,0 +1,16 @@
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\bin\Debug\VotreMatricule.exe.config
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\bin\Debug\VotreMatricule.exe
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\bin\Debug\VotreMatricule.pdb
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\obj\Debug\VotreMatricule.csproj.AssemblyReference.cache
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\obj\Debug\VotreMatricule.csproj.SuggestedBindingRedirects.cache
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\obj\Debug\MainWindow.g.cs
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\obj\Debug\App.g.cs
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\obj\Debug\VotreMatricule_MarkupCompile.cache
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\obj\Debug\VotreMatricule_MarkupCompile.lref
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\obj\Debug\MainWindow.baml
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\obj\Debug\VotreMatricule.g.resources
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\obj\Debug\VotreMatricule.Properties.Resources.resources
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\obj\Debug\VotreMatricule.csproj.GenerateResource.cache
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\obj\Debug\VotreMatricule.csproj.CoreCompileInputs.cache
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\obj\Debug\VotreMatricule.exe
+D:\OneDrive - CEGEP de Saint-JEROME\15-H23\420-4C4-JR_Évolution des applications\TPs\TP2\Léa\ES_VA\VotreMatricule\obj\Debug\VotreMatricule.pdb
