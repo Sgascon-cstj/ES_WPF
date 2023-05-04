@@ -83,5 +83,27 @@ namespace DAL
             }
             finally { conn.Close(); }
         }
+        public static DataTable GetConnexion(string identifiant, string mdp)
+        {
+            MySqlConnection conn = new MySqlConnection("SERVER=localhost; DATABASE=bd-es-va; uid=root; PASSWORD=;");
+
+            try
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand($"SELECT Identifiant FROM connexion WHERE Identifiant='${identifiant}' AND MotDePasse='${mdp}'", conn);
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
+
+                DataSet ds = new DataSet();
+                adp.Fill(ds, "connexion");
+                var dt = ds.Tables["connexion"];
+                return dt;
+            }
+            catch (MySqlException ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return null;
+            }
+            finally { conn.Close(); }
+        }
     }
 }

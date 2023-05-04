@@ -27,6 +27,11 @@
             <Setter Property="Margin" Value="0 10 0 0"></Setter>
 
         </Style>
+        <Style TargetType="Button">
+            <Setter Property="Template" Value="{StaticResource BTNRectangle}"/>
+            <Setter Property="Width" Value="160"/>
+            <Setter Property="Height" Value="25"/>
+        </Style>
     </UserControl.Resources>
     <Grid>
         <Grid.Background>
@@ -36,6 +41,17 @@
         <StackPanel>
             <TextBlock Style="{StaticResource title}" >ÉvaluationSynthèse_Volet A, AutoVendu.inc</TextBlock>
             <TextBlock Style="{StaticResource subTitle}">Réalisé par Samuel Gascon, 2151866</TextBlock>
+            <StackPanel x:Name="spConnexion">
+                <WrapPanel>
+                    <Label>Nom d'utilisateur: </Label>
+                    <TextBox Name="txbUserName" Width="200px"></TextBox>
+                </WrapPanel>
+                <WrapPanel>
+                    <Label>Mot de passe:</Label>
+                    <PasswordBox Name="txbMdp" Margin="19 1 0 0" Width="200px"></PasswordBox>
+                </WrapPanel>
+                <Button x:Name="btnValider" Click="btnValider_Click"  HorizontalAlignment="Left" Margin="75 2 0 0"> Valider</Button>
+            </StackPanel>
             <TextBlock Foreground="White" HorizontalAlignment="Center" FontSize="15px" Margin="0 250 0 0">Source de 
 données : Statistique Canada et Wikipédia</TextBlock>
         </StackPanel>

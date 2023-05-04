@@ -16,7 +16,7 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="8*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Menu Grid.Row="0" HorizontalAlignment="Center" Height="25px">
+        <Menu Name="menuMainWindow" Visibility="Hidden" Grid.Row="0" HorizontalAlignment="Center" Height="25px">
             <MenuItem Header="Données de commercialisation" Click="Donne_Click"></MenuItem>
             <MenuItem Header="Véhicule par province" Click="Vehicule_Click"></MenuItem>
             <MenuItem Header="Graphique d'évolution" Click="Graphique_Click"></MenuItem>

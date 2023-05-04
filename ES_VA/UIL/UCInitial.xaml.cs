@@ -1,6 +1,7 @@
 ﻿// Prenom : Samuel
 // Nom : Gascon
 // Matricule : 2151866using System;
+using BLL;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,22 @@ namespace UIL
         public UCInitial()
         {
             InitializeComponent();
+        }
+
+        private void btnValider_Click(object sender, RoutedEventArgs e)
+        {
+            string mdp = txbMdp.Password;
+            string userName = txbUserName.Text;
+            Connexion connexion = Connexion.getConnexion();
+            if (connexion.SeConnecter(userName, mdp))
+            {
+                MessageBox.Show("ok");
+            }
+            else
+            {
+                MessageBox.Show("k");
+
+            }
         }
     }
 }
