@@ -1,4 +1,7 @@
-﻿using DAL;
+﻿// Prenom : Samuel
+// Nom : Gascon
+// Matricule : 2151866
+using DAL;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -14,6 +17,10 @@ namespace BLL
         public static ObservableCollection<Province> provinces = new ObservableCollection<Province>();
         public static void ChargerListProvince()
         {
+            if (provinces.Count > 0)
+            {
+                provinces = new ObservableCollection<Province>();
+            }
             DataTable dt = AccessDB.GetProvince();
 
             for (int i = 0; i < dt.Rows.Count; i++)

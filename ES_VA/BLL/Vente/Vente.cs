@@ -1,4 +1,7 @@
-﻿using BLL;
+﻿// Prenom : Samuel
+// Nom : Gascon
+// Matricule : 2151866
+using BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

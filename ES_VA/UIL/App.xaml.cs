@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Prenom : Samuel
+// Nom : Gascon
+// Matricule : 2151866
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;

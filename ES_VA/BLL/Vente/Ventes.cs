@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Prenom : Samuel
+// Nom : Gascon
+// Matricule : 2151866
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data;
@@ -15,6 +18,10 @@ namespace BLL
         
         public static void ChargerListeVente()
         {
+            if (ventes.Count > 0)
+            {
+                ventes = new ObservableCollection<Vente>();
+            }
             DataTable dt = AccessDB.GetVente();
 
             for (int i = 0; i < dt.Rows.Count; i++)
@@ -38,7 +45,19 @@ namespace BLL
 
             return toutLesAnnees.Where(x => x >= anneeMin).ToList();
         }
-       
+        public static List<double> RetrouverListDesVentesPourUnTypeEtUneProvince(Vehicule vehicule, Province province)
+        {
+            List<double> lesVentes = new List<double>();
+            foreach (var vente in ventes)
+            {
+                if (vente.NomProvince.NomProvince == province.NomProvince && vente.TypeVehicule.TypeVehicule == vehicule.TypeVehicule)
+                {
+                    lesVentes.Add(vente.MntPar1000);
+                }
+            }
+
+            return lesVentes;
+        }
 
     }
 }

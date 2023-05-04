@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Prenom : Samuel
+// Nom : Gascon
+// Matricule : 2151866
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -93,6 +96,10 @@ namespace BLL
         {
             if (this.PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+        public override string ToString()
+        {
+            return NomProvince.ToString();
         }
     }
 }

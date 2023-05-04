@@ -53,5 +53,11 @@ C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\UIL\bin\Debug\System.IO.Pipelines.xml
 C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\UIL\bin\Debug\K4os.Hash.xxHash.xml
 C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\UIL\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\UIL\bin\Debug\System.Buffers.xml
-C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\UIL\obj\Debug\UIL.exe.config
 C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\UIL\obj\Debug\UIL.csproj.CopyComplete
+C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\UIL\bin\Debug\LiveCharts.dll
+C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\UIL\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\UIL\bin\Debug\LiveCharts.pdb
+C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\UIL\bin\Debug\LiveCharts.xml
+C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\UIL\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\UIL\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\UIL\obj\Debug\App.baml

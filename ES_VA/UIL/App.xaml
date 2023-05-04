@@ -1,9 +1,59 @@
-﻿<Application x:Class="UIL.App"
+﻿<!--
+    Nom : Gascon
+    Prenom : Samuel   
+    Matricule : 2151866
+-->
+    <Application x:Class="UIL.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:UIL"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <!--STYLE-->
+
+    <ControlTemplate TargetType="Button" x:Key="BTNRectangle">
+        <Grid>
+            <Rectangle Name="btnRectangle" Fill="Beige" RadiusX="5" RadiusY="5"/>
+            <TextBlock Name="btnText" Text="{TemplateBinding Content}" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="btnRectangle" Property="Fill">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA4E7EC"/>
+                            <GradientStop Color="#FF8BB59F" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <ControlTemplate TargetType="DataGridColumnHeader" x:Key="DataColumHeader">
+        <Grid>
+            <Rectangle Name="dataRectangle" Fill="Beige" RadiusX="5" RadiusY="5"/>
+            <TextBlock Name="dataText" Text="{TemplateBinding Content}" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+
+    </ControlTemplate>
+    <Style TargetType="DataGridColumnHeader" >
+        <Setter Property="Background" Value="FloralWhite"></Setter>
+        <Setter Property="FontSize" Value="12"></Setter>
+        <Setter Property="FontWeight" Value="DemiBold"></Setter>
+        <Setter Property="Template" Value="{StaticResource DataColumHeader}"></Setter>
+
+    </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Width" Value="100px"></Setter>
+            <Setter Property="Margin" Value="10 10 10 0"></Setter>
+            <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="FontSize" Value="14px"></Setter>
+        </Style>
+        <Style TargetType="ListView" x:Key="ListViewStyle">
+            <Setter Property="Background" Value="AliceBlue"></Setter>
+            <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"></Setter>
+        </Style>   
     </Application.Resources>
 </Application>
