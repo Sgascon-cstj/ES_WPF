@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{443ACA85-E076-4E73-AA08-637E9F28BCB9}</ProjectGuid>
+    <ProjectGuid>{B23CD7E4-964A-44FA-B63B-E8472D438EE8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>VotreMatricule</RootNamespace>
-    <AssemblyName>VotreMatricule</AssemblyName>
+    <RootNamespace>UIL</RootNamespace>
+    <AssemblyName>UIL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,7 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Vente.cs" />
+    <Compile Include="UCDonneesComm.xaml.cs">
+      <DependentUpon>UCDonneesComm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCGraphiqueEvolution.xaml.cs">
+      <DependentUpon>UCGraphiqueEvolution.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCInitial.xaml.cs">
+      <DependentUpon>UCInitial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCVehiculesParProvince.xaml.cs">
+      <DependentUpon>UCVehiculesParProvince.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,6 +79,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UCDonneesComm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCGraphiqueEvolution.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCInitial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCVehiculesParProvince.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -97,9 +124,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{b9f487b7-370f-42e8-8ff3-51cc4a994784}</Project>
+      <Project>{653fd1c1-9fae-4418-8a5d-db3a6dc7a095}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\zelda.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

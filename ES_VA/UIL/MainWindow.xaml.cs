@@ -13,16 +13,44 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace VotreMatricule
+namespace UIL
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        private UserControl UCInitial = new UCInitial();
+        private UserControl UcDonne = new UCDonneesComm();
+        private UserControl UcVehicule = new UCVehiculesParProvince();
+        private UserControl UcGraphique = new UCGraphiqueEvolution();
         public MainWindow()
         {
             InitializeComponent();
+            uc.Children.Add(UCInitial);
+        }
+
+        private void Donne_Click(object sender, RoutedEventArgs e)
+        {
+            uc.Children.Clear();
+            uc.Children.Add(UcDonne);
+        }
+
+        private void Vehicule_Click(object sender, RoutedEventArgs e)
+        {
+            uc.Children.Clear();
+            uc.Children.Add(UcVehicule);
+        }
+
+        private void Graphique_Click(object sender, RoutedEventArgs e)
+        {
+            uc.Children.Clear();
+            uc.Children.Add(UcGraphique);
+        }
+
+        private void Quitter_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }
