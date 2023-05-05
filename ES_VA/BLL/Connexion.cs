@@ -13,6 +13,7 @@ namespace BLL
         private static Connexion connexion; 
         private Connexion() { }
         private string nomUtilisateur;
+        public string NomUtilisateur { get { return nomUtilisateur; } }
         
         public static Connexion getConnexion()
         { 
@@ -38,6 +39,20 @@ namespace BLL
             }
 
 
+        }
+        public List<string> GetUserName() 
+        {
+            List<string> userNames = new List<string>();
+            if (nomUtilisateur == "admin")
+            {
+                DataTable dt = AccessDB.GetUserName();
+                 
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    userNames.Add(dt.Rows[i]["Identifiant"].ToString());
+                }
+            }
+            return userNames;
         }
     }
 }

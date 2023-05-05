@@ -85,7 +85,7 @@ namespace BLL
             {
                 if (vente.NomProvince.NomProvince == this.NomProvince && vente.Annee >= anneDepart && vente.Annee <= anneFin && vente.TypeVehicule.TypeVehicule == vehicule.TypeVehicule )
                 {
-                    sommes += vente.MntPar1000/vente.NbUnites;
+                    sommes += vente.MntPar1000;
                 }
             }
             Somme = sommes;

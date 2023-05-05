@@ -96,7 +96,16 @@ namespace BLL
         
         public double CalculerPrixMoyenPar1000()
         {
-            return (mntPar1000 * 1000) / NbUnites;
+            double calcule = (mntPar1000 * 1000) / NbUnites;
+            if (double.IsNaN(calcule))
+            {
+                return 0;
+            }
+            else
+            {
+                return calcule;
+            }
+            
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

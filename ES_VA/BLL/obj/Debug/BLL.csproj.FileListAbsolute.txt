@@ -34,3 +34,5 @@ C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\BLL\obj\Debug\BLL.csproj.CoreCompileI
 C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\BLL\obj\Debug\BLL.dll
 C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\BLL\obj\Debug\BLL.pdb
+C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\BLL\bin\Debug\nunit.framework.dll
+C:\Users\samue\Desktop\ES_WPF\ES_WPF\ES_VA\BLL\bin\Debug\nunit.framework.xml

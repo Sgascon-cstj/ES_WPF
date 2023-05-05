@@ -18,15 +18,15 @@
             <Setter Property="Foreground" Value="Black"></Setter>
             <Setter Property="FontWeight" Value="DemiBold"></Setter>
         </Style>
-        <Style TargetType="TextBlock">
+        <Style TargetType="TextBlock" x:Key="title">
             <Setter Property="FontSize" Value="20px"></Setter>
             <Setter Property="HorizontalAlignment" Value="Center"></Setter>
-            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="Foreground" Value="Wheat"></Setter>
         </Style>
     </UserControl.Resources>
     <Grid>
         <StackPanel>
-            <TextBlock FontSize="25px" HorizontalAlignment="Center">Graphique</TextBlock>
+            <TextBlock FontSize="25px" HorizontalAlignment="Center" Style="{StaticResource title}">Graphique</TextBlock>
             <WrapPanel HorizontalAlignment="Center">
                 <ComboBox Name="provinces"></ComboBox>
                 <ComboBox Name="vehicules"></ComboBox>

@@ -27,9 +27,13 @@ namespace UIL
         private UserControl UcDonne = new UCDonneesComm();
         private UserControl UcVehicule = new UCVehiculesParProvince();
         private UserControl UcGraphique = new UCGraphiqueEvolution();
+
+        public static Menu menu = new Menu();
         public MainWindow()
         {
             InitializeComponent();
+            menu = menuMainWindow;
+
             uc.Children.Add(UCInitial);
         }
 

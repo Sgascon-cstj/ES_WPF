@@ -18,7 +18,7 @@
             <Setter Property="Width" Value="160"/>
             <Setter Property="Height" Value="25"/>
         </Style>
-        <Style TargetType="TextBlock">
+        <Style TargetType="TextBlock" x:Key="title">
             <Setter Property="FontSize" Value="20px"></Setter>
             <Setter Property="HorizontalAlignment" Value="Center"></Setter>
             <Setter Property="Foreground" Value="White"></Setter>
@@ -27,7 +27,7 @@
     <Grid>
         <ScrollViewer>
         <StackPanel>
-            <TextBlock FontSize="25px" HorizontalAlignment="Center">Vehicule par province</TextBlock>
+                <TextBlock FontSize="25px" HorizontalAlignment="Center" Style="{StaticResource title}">Vehicule par province</TextBlock>
             <WrapPanel HorizontalAlignment="Center" >
                 <ComboBox Name="anneDepart"></ComboBox>
                 <ComboBox Name="anneFin">

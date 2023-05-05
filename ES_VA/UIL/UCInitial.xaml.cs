@@ -35,11 +35,17 @@ namespace UIL
             Connexion connexion = Connexion.getConnexion();
             if (connexion.SeConnecter(userName, mdp))
             {
-                MessageBox.Show("ok");
+                MessageBox.Show("Vous êtes connecter");
+                MainWindow.menu.Visibility = Visibility.Visible;
+                if (connexion.NomUtilisateur == "admin")
+                {
+                    lsbAccount.Visibility = Visibility.Visible;
+                    lsbAccount.ItemsSource = connexion.GetUserName();
+                }
             }
             else
             {
-                MessageBox.Show("k");
+                MessageBox.Show("Erreur veuiller recommencer!");
 
             }
         }

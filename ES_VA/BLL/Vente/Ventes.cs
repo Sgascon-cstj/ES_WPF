@@ -52,7 +52,7 @@ namespace BLL
             {
                 if (vente.NomProvince.NomProvince == province.NomProvince && vente.TypeVehicule.TypeVehicule == vehicule.TypeVehicule)
                 {
-                    lesVentes.Add(vente.MntPar1000);
+                    lesVentes.Add(vente.PrixMoyenPar1000);
                 }
             }
 

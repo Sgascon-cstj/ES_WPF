@@ -33,7 +33,7 @@ namespace DAL
             }
             catch (MySqlException ex)
             {
-                Debug.WriteLine(ex.Message);
+                Debug.WriteLine("GetVehicule " + ex.Message);
                 return null;
             }
             finally { conn.Close(); }
@@ -56,7 +56,7 @@ namespace DAL
             }
             catch (MySqlException ex)
             {
-                Debug.WriteLine(ex.Message);
+                Debug.WriteLine("GetProvince " + ex.Message);
                 return null;
             }
             finally { conn.Close(); }
@@ -78,7 +78,7 @@ namespace DAL
             }
             catch (MySqlException ex)
             {
-                Debug.WriteLine(ex.Message);
+                Debug.WriteLine("GetVehicule " +ex.Message);
                 return null;
             }
             finally { conn.Close(); }
@@ -91,6 +91,28 @@ namespace DAL
             {
                 conn.Open();
                 MySqlCommand cmd = new MySqlCommand($"SELECT Identifiant FROM connexion WHERE Identifiant='${identifiant}' AND MotDePasse='${mdp}'", conn);
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
+
+                DataSet ds = new DataSet();
+                adp.Fill(ds, "connexion");
+                var dt = ds.Tables["connexion"];
+                return dt;
+            }
+            catch (MySqlException ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return null;
+            }
+            finally { conn.Close(); }
+        }
+        public static DataTable GetUserName()
+        {
+            MySqlConnection conn = new MySqlConnection("SERVER=localhost; DATABASE=bd-es-va; uid=root; PASSWORD=;");
+
+            try
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand($"SELECT Identifiant FROM connexion", conn);
                 MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
 
                 DataSet ds = new DataSet();
